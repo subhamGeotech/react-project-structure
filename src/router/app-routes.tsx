@@ -17,8 +17,5 @@ const routes = createBrowserRouter([
   },
 ]);
 
-// const routes = []
-// routes.extend(authenticationRoutes)
-
 
 export default routes;
