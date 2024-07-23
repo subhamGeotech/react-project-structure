@@ -1,9 +1,10 @@
+import Router from "./router";
 
 
 function App() {
 
   return (
-      <p>Browser router</p>
+      <Router />
   )
 }
 

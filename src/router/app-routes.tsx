@@ -1,20 +1,24 @@
-import { RouteObject } from 'react-router-dom';
-import Home from '@/pages/home';
-import ContactUs from '@/pages/contact-us';
-import LoginPage from '@/pages/login';
+import { createBrowserRouter } from 'react-router-dom';
+import {authenticationRoutes} from '@/features/authentication';
+import {constUsRoutes} from '@/features/contact-us/contact-us.routes'
 
-const routes: RouteObject[] = [
+const routes = createBrowserRouter([
   {
     index: true,
-    element: <Home />,
+    element: <p>Home</p>,
   },
   {
-    path: 'login',
-    element: <LoginPage />,
+    path: 'auth',
+    children: authenticationRoutes
   },
   {
-    path: '',
-    element: <ContactUs />,
+    path: 'contact-us',
+    children: constUsRoutes,
   },
-];
+]);
+
+// const routes = []
+// routes.extend(authenticationRoutes)
+
+
 export default routes;

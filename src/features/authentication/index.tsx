@@ -1,4 +1,4 @@
-import Login from "./components/Login";
 import useGetAuthStatus from "./hooks/useGetAuthStatus";
+import { authenticationRoutes } from "./authentication.routes";
 
-export {Login, useGetAuthStatus};
+export {useGetAuthStatus, authenticationRoutes};
