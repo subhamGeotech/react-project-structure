@@ -1,6 +1,3 @@
+const useGetAuthStatus = () => 'Hello';
 
-const useGetAuthStatus = () => {
-  return 'Hello'
-}
-
-export default useGetAuthStatus
+export default useGetAuthStatus;
