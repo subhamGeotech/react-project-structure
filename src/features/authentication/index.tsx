@@ -1,4 +1,4 @@
-import useGetAuthStatus from "./hooks/useGetAuthStatus";
-import { authenticationRoutes } from "./authentication.routes";
+import useGetAuthStatus from './hooks/useGetAuthStatus';
+import { authenticationRoutes } from './authentication.routes';
 
-export {useGetAuthStatus, authenticationRoutes};
+export { useGetAuthStatus, authenticationRoutes };
